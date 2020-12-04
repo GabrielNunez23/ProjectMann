@@ -24,7 +24,8 @@ namespace ProjectMann.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            services.AddDbContext<ProjectMannDbContext>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("ProjectMannConnection")));
 
             services.AddControllersWithViews();
         }
