@@ -1,10 +1,11 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using ProjectMann.Core.Domain;
 
 #nullable disable
 
-namespace ProjectMann.Web
+namespace ProjectMann.Infrastructure.Data
 {
     public partial class ProjectMannDbContext : DbContext
     {
@@ -36,15 +37,6 @@ namespace ProjectMann.Web
         public virtual DbSet<TipoItemTrabajo> TipoItemTrabajos { get; set; }
         public virtual DbSet<TipoTicket> TipoTickets { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-//            if (!optionsBuilder.IsConfigured)
-//            {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//                optionsBuilder.UseNpgsql("Host=localhost;Database=projectmann;Username=projectmann;Password=pr0j3ctm4nn");
-//            }
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

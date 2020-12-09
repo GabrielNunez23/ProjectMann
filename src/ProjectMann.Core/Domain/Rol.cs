@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace ProjectMann.Web
+namespace ProjectMann.Core.Domain
 {
     public partial class Rol
     {
