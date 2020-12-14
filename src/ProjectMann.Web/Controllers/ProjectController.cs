@@ -88,8 +88,8 @@ namespace ProjectMann.Web.Controllers
             }
             ViewData["FkCliente"] = new SelectList(_context.Clientes, "IdCliente", "Nombre", proyecto.FkCliente);
             ViewData["FkEstado"] = new SelectList(_context.Estados, "IdEstado", "Nombre", proyecto.FkEstado);
-            ViewData["FkUsuarioCrea"] = new SelectList(_context.Usuarios, "IdUsuario", "Apellido", proyecto.FkUsuarioCrea);
-            ViewData["FkUsuarioModifica"] = new SelectList(_context.Usuarios, "IdUsuario", "Apellido", proyecto.FkUsuarioModifica);
+            ViewData["FkUsuarioCrea"] = new SelectList(_context.Usuarios, "IdUsuario", "NombreUsuario", proyecto.FkUsuarioCrea);
+            ViewData["FkUsuarioModifica"] = new SelectList(_context.Usuarios, "IdUsuario", "NombreUsuario", proyecto.FkUsuarioModifica);
             return View(proyecto);
         }
 
@@ -109,8 +109,8 @@ namespace ProjectMann.Web.Controllers
             }
             ViewData["FkCliente"] = new SelectList(_context.Clientes, "IdCliente", "Nombre", proyecto.FkCliente);
             ViewData["FkEstado"] = new SelectList(_context.Estados, "IdEstado", "Nombre", proyecto.FkEstado);
-            ViewData["FkUsuarioCrea"] = new SelectList(_context.Usuarios, "IdUsuario", "Apellido", proyecto.FkUsuarioCrea);
-            ViewData["FkUsuarioModifica"] = new SelectList(_context.Usuarios, "IdUsuario", "Apellido", proyecto.FkUsuarioModifica);
+            ViewData["FkUsuarioCrea"] = new SelectList(_context.Usuarios, "IdUsuario", "NombreUsuario", proyecto.FkUsuarioCrea);
+            ViewData["FkUsuarioModifica"] = new SelectList(_context.Usuarios, "IdUsuario", "NombreUsuario", proyecto.FkUsuarioModifica);
             return View(proyecto);
         }
 
@@ -163,8 +163,8 @@ namespace ProjectMann.Web.Controllers
             }
             ViewData["FkCliente"] = new SelectList(_context.Clientes, "IdCliente", "Nombre", proyecto.FkCliente);
             ViewData["FkEstado"] = new SelectList(_context.Estados, "IdEstado", "Nombre", proyecto.FkEstado);
-            ViewData["FkUsuarioCrea"] = new SelectList(_context.Usuarios, "IdUsuario", "Apellido", proyecto.FkUsuarioCrea);
-            ViewData["FkUsuarioModifica"] = new SelectList(_context.Usuarios, "IdUsuario", "Apellido", proyecto.FkUsuarioModifica);
+            ViewData["FkUsuarioCrea"] = new SelectList(_context.Usuarios, "IdUsuario", "NombreUsuario", proyecto.FkUsuarioCrea);
+            ViewData["FkUsuarioModifica"] = new SelectList(_context.Usuarios, "IdUsuario", "NombreUsuario", proyecto.FkUsuarioModifica);
             return View(proyecto);
         }
 
